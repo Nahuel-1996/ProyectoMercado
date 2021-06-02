@@ -1,0 +1,66 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+header {
+    
+    background: rgb(234, 201, 38);
+}
+
+
+.titulares{
+    font-size: 24px
+    
+}
+.price{
+    font-size: 18px;
+}
+.discount{
+    font-size: 16px;
+    color: rgb(57, 181, 74)
+}
+.description{
+    font-size: 16px;
+}
+.burger-menu{
+    color: white;
+    font-size: 40px;
+    background-color:rgb(18, 89, 195);
+    box-sizing: border-box;
+    padding:10px   
+}
+
+.credit-card{
+    color: rgb(18, 89, 195);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding:10px;
+    
+}
+
+.gift{
+    color: rgb(18, 89, 195);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding:10px;
+    
+}
+
+.security{
+    color: rgb(18, 89, 195);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+footer{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.envio{
+    color: rgb(57, 181, 74);
+}
