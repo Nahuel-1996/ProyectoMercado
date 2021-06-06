@@ -1,17 +1,50 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    margin: auto;
-    list-style: none;
+    margin: auto; 
+    background-color: #ebebeb;
 }
 header {
         background: rgb(234, 201, 38);
+        padding: 45px;
+}
+main{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 15px;
+    
+}
+.imagen{
+    width: 200px;
+    margin: 10px ;
+    padding: 10px;   
+}
+footer{
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
 }
 
 
-.titulares{
+.caja{
+    border: 1px solid transparent;
+    background-color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.caja2{
+    border-top: 1px solid #ebebeb;
+    text-align: left;
+}
+
+.offers{
     font-size: 24px
-    
+}
+.last-visit{
+    font-size: 24px
 }
 .price{
     font-size: 18px;
@@ -24,8 +57,8 @@ header {
     font-size: 16px;
 }
 .burger-menu{
-    margin: 20px 0px;
-    width: 40px;
+    margin: auto;
+    width: 50px;
     height: 40px;
     background-color: #0044AA;
     color: #FFF;
@@ -38,11 +71,6 @@ header {
     align-content: center;
 }
 
-footer{
-    text-align: center;
-    font-size: 2em;
-    margin: auto;
-}
 .iconos-footer{
     width: 100px;
     margin-bottom: 10px;
@@ -54,16 +82,24 @@ footer{
     color: rgb(57, 181, 74);
 }
 
-article{
-    max-width:100%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid black
+.last-visit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.offers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main{
-    max-width: 90%;
-}
+
+
+
+
 
 
 
