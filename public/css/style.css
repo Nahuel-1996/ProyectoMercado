@@ -4,28 +4,27 @@ body{
     margin: auto; 
     background-color: #ebebeb;
 }
-header {
+.main-header {
         background: rgb(234, 201, 38);
-        padding: 45px;
+        padding: 20px;
 }
 main{
     text-align: center;
     display: flex;
     flex-wrap: wrap;  
     padding: 15px;
-    
+}
+
+footer{
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
 }
 .imagen{
     width: 200px;
     margin: 10px ;
     padding: 10px;   
 }
-footer{
-    text-align: center;
-    font-size: 2em;
-    margin: auto;
-}
-
 
 .caja{
     border: 1px solid transparent;
@@ -34,6 +33,7 @@ footer{
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    box-shadow: 2px 2px 5px #999
 }
 .caja2{
     border-top: 1px solid #ebebeb;
@@ -57,18 +57,15 @@ footer{
     font-size: 16px;
 }
 .burger-menu{
-    margin: auto;
-    width: 50px;
-    height: 40px;
     background-color: #0044AA;
     color: #FFF;
-    font-size: 20px;
-    padding: 10px;
-    display: flex;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
 }
 
 .iconos-footer{
@@ -80,23 +77,68 @@ footer{
 
 .envio{
     color: rgb(57, 181, 74);
+   
 }
 
 .last-visit{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     
 }
 .offers{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    
+}
+.logo{
+    width: 200px;
 }
 
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
 
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a {
+   display: inline-block;
+   padding: 5px 0;
+}
+
+@media(min-width: 768px){
+    .top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+}
 
 
 
