@@ -115,6 +115,9 @@ footer{
    display: inline-block;
    padding: 5px 0;
 }
+.banner{
+    width: 50px; 
+}
 
 @media(min-width: 768px){
     .top-bar{
@@ -137,6 +140,32 @@ footer{
     }
     .main-navbar li{
         margin: 0 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-bar, .main-navbar{
+        max-width:1200px;
+        margin: auto;
+    }
+    .top-bar{
+        align-items: center;
+    }
+    .logo{
+        width: 250px;
+    }
+    .copy-header{
+        margin:0px;
+        max-width: none;
+    }
+    .main-navbar li{
+        margin: 0 8px;
+    }
+    .main-navbar a{
+        margin: 0 10px;
+    }
+    .main-navbar{
+        margin-top: 30px;
     }
 }
 
