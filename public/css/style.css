@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    margin: auto; 
+    margin: center; 
     background-color: #ebebeb;
 }
 .main-header {
@@ -10,9 +10,9 @@ body{
 }
 main{
     text-align: center;
-    display: flex;
+    display: block;
     flex-wrap: wrap;  
-    padding: 15px;
+    justify-content: space-around;
 }
 
 footer{
@@ -22,8 +22,16 @@ footer{
 }
 .imagen{
     width: 200px;
-    margin: 10px ;
-    padding: 10px;   
+  
+}
+.contenedor{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
 }
 
 .caja{
@@ -33,7 +41,8 @@ footer{
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    box-shadow: 2px 2px 5px #999
+    box-shadow: 2px 2px 5px #999;
+    padding: 15px;
 }
 .caja2{
     border-top: 1px solid #ebebeb;
@@ -41,7 +50,8 @@ footer{
 }
 
 .offers{
-    font-size: 24px
+    font-size: 24px;
+    display: flex;
 }
 .last-visit{
     font-size: 24px
@@ -55,6 +65,7 @@ footer{
 }
 .description{
     font-size: 16px;
+    display: none;
 }
 .burger-menu{
     background-color: #0044AA;
@@ -83,17 +94,10 @@ footer{
 .last-visit{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: flex-start;
     
 }
-.offers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    
-}
+
 .logo{
     width: 200px;
 }
@@ -118,6 +122,19 @@ footer{
 .banner{
     width: 50px; 
 }
+.titulo{
+    text-align: center;
+}
+.envio{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(57, 181, 74);
+    align-items: center;
+    justify-content: center;
+   margin-top: 1px;
+}
 
 @media(min-width: 768px){
     .top-bar{
@@ -141,6 +158,25 @@ footer{
     .main-navbar li{
         margin: 0 5px;
     }
+    .contenedor{
+        display: flex;
+        width: 50vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .last-visit{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    .description{
+        font-size: 16px;
+        display: flex;
+    }
+    
+    
 }
 
 @media (min-width: 1200px) {
@@ -166,6 +202,29 @@ footer{
     }
     .main-navbar{
         margin-top: 30px;
+    }
+    .contenedor{
+        display: flex;
+        width: 50vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .tituloDeSecciones{
+        text-align: center;
+        margin: auto;
+    }
+    .caja{
+        margin:50px;
+    }
+    .hola{
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: center;
+ 
     }
 }
 
